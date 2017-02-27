@@ -1,19 +1,29 @@
+<?php session_start();?>
 <html>
 <head>
-<title>MyFirstPage</title>
-<!--comments in html
-<meta http-equiv="refresh" content="3";url=http://www.google.co.in" />
- -->
-<meta name="keywords" content="anythig about the page so the engine can find it"/>
-<link rel="shrotcut icon" type="image/png" href="favicon.png" />
+<title>Login Page</title>
+
 </head>
 <body bgcolor="lightgreen">
 <script type="text/javascript" src="./fbapp/fb.js"></script>
-<h2>
-Welcome to our page
-</h2>
-<div class="fb-login-button">
-</div>
+
+	<h2>
+		Welcome 
+		<?php
+		if(isset($_SESSION['name']) echo $_SESSION['name'])
+
+		?>
+	</h2>
+		<?php
+		if(isset($_SESSION['name'])
+		{}
+		else
+		{ ?>
+	<div class="fb-login-button" data-scope="public_profile,email" 
+		onclick="checkLoginState();" data-size="xlarge">
+		
+	</div>
+		<?php } ?>
 
 </body>
 </html>
