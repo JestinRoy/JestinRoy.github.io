@@ -1,4 +1,3 @@
-<?php session_start();?>
 <html>
 <head>
 <title>MyFirstPage</title>
@@ -10,22 +9,11 @@
 </head>
 <body bgcolor="lightgreen">
 <script type="text/javascript" src="./fbapp/fb.js"></script>
-	<h2>
-		Welcome 
-		<?php
-		if(isset($_SESSION['name']) echo $_SESSION['name'])
-
-		?>
-	</h2>
-		<?php
-		if(isset($_SESSION['name'])
-		{}
-		else
-		{ ?>
-	<div class="fb-login-button" data-scope="public_profile,email" 
-		onclick="checkLoginState();" data-size="xlarge" data-auto-logout-link="true">
-		<?php } ?>
-	</div>
+<h2>
+Welcome to our page
+</h2>
+<div class="fb-login-button">
+</div>
 
 </body>
 </html>
